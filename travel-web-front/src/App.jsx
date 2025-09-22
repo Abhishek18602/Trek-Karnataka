@@ -7,7 +7,7 @@ function App() {
   useEffect(() => {
     const fetchTreks = async () => {
       try {
-        const response = await fetch("https://trek-karnataka.onrender.com");
+        const response = await fetch("https://trek-karnataka.onrender.com/scrapee/data");
         const data = await response.json();
         setTreks(data);
       } catch (error) {
